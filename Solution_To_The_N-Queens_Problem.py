@@ -44,7 +44,7 @@ class NQueens:
         if row >= self.n:
             self.solutions.append(["".join(row) for row in self.board])
             return
-        # Recursive Case: Places a queen in every col or current row
+        # Recursive Case: Places a queen in every col or current rowcd
         for col in range(self.n):
             if self.is_safe(row, col):
                 self.board[row][col] = "Q"
